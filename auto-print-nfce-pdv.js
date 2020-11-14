@@ -5,6 +5,9 @@
 
 // javascript:
 setInterval(function(){
-	let button = document.querySelector(".act-print-invoice");
-	button.click();
+	let printNfcButton = document.querySelector(".act-print-invoice");
+	// verifica se elemento existe
+	if( printNfcButton ){
+		printNfcButton.click();
+	}
 }, 400);
