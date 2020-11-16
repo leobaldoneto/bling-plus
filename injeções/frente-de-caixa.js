@@ -1,7 +1,7 @@
 // No Frente de Caixa, imprime NFC-e automaticamente após a autorização da Sefaz.
 
 // link mask:
-*bling.com.br*pdv.php
+// *bling.com.br*pdv.php
 
 // javascript:
 setInterval(function(){
