@@ -26,7 +26,6 @@
     },
     {
       "matches": ["https://*.bling.com.br/*/produtos.php"],
-      "css": ["injections/produtos/produtos.css"],
       "js": ["injections/produtos/produtos.js"]
     }
   ]
