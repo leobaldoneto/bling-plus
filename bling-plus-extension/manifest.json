@@ -12,7 +12,8 @@
   "options_page": "options.html",
   "browser_action": {
     "default_title": "Bling Plus",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   },
   "content_scripts": [
     {
