@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Bling Plus",
+  "description": "Adiciona ferramentas e melhorias ao Bling ERP.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "author": "Leobaldo Alcantara Neto",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_title": "Bling Plus",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.bling.com.br/*/pdv.php"],
+      "css": ["injections/pdv/pdv.css"],
+      "js": ["injections/pdv/pdv.js"]
+    },
+    {
+      "matches": ["https://*.bling.com.br/*/pedidos-compra.php"],
+      "js": ["injections/pedidos-compra/pedidos-compra.js"]
+    },
+    {
+      "matches": ["https://*.bling.com.br/*/produtos.php"],
+      "css": ["injections/produtos/produtos.css"],
+      "js": ["injections/produtos/produtos.js"]
+    }
+  ]
+}
